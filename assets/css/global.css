@@ -1,0 +1,17 @@
+* {
+box-sizing: border-box;
+}
+
+.main {
+    padding: 1rem;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #871749, black, #962fbf, black, #962fbf, #c00c5d, #fa7e1e, #ccaa4d);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+    height: 100vh;
+    color: white;
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
