@@ -1,15 +1,35 @@
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
-.main {
-    padding: 1rem;
-    background: linear-gradient(45deg, #feda75, #fa7e1e, #871749, black, #962fbf, black, #962fbf, #c00c5d, #fa7e1e, #ccaa4d);
+@font-face {
+    font-family: "Neue Machina";
+    src: url("../fonts/NeueMachina-Light.otf");
+}
+
+body{
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #871749, black, black, black, #962fbf, #c00c5d, #fa7e1e, #ccaa4d);
     background-size: 200% 200%;
     animation: gradientAnimation 10s ease infinite;
     height: 100vh;
     color: white;
 }
+
+.main {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+@media only screen and (min-width: 684px) {
+    .main {
+        max-width: 700px;
+        margin: 1rem auto;
+    }
+}
+
 @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
