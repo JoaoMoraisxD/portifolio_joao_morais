@@ -39,16 +39,23 @@
     background-image: url("../img/seta-para-baixo.png");
     background-repeat: no-repeat;
     background-size: contain;
+    transition: 0.25s;
 } 
 
 .acordeon.open .trigger::after {
     transform: rotate(180deg);
 }
 
-.acordeon .content{
-    display: none;
+.acordeon .content {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
 }
 
 .acordeon.open .content {
-    display: inline-block;
+    display: block;
+    height: auto;
+    opacity: 1;
+    padding: 0 1rem 1rem 2rem;
 }
