@@ -1,0 +1,36 @@
+.experience {
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+.experience li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.experience li .title {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.experience li .time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content .time {
+    margin-top: .5rem;
+}
+
+.content .time::before {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1rem;
+    background-image: url("../img/tabela.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
