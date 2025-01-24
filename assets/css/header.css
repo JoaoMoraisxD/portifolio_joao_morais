@@ -45,8 +45,28 @@
 .info .phone::before {
     background-image: url("../img/phone_10813570.png");
 }
+
+.info .phone a {
+    color: white;
+    text-decoration: none;
+}
+
+.info .phone a:hover {
+    text-decoration: underline;
+}
+
+
 .info .email::before {
     background-image: url("../img/message.png");
+}
+
+.info .email a {
+    color: white;
+    text-decoration: none;
+}
+
+.info .email a:hover {
+    text-decoration: underline;
 }
 
 .info {

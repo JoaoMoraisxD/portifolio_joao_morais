@@ -1,0 +1,44 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.portfolio li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+
+.portfolio li .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+.portfolio li .title.github::before {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1rem;
+    background-image: url("../img/github.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.portfolio li a{
+    color: white;
+    text-decoration: none;
+}
+
+.portfolio li a:hover{
+    text-decoration: underline;
+}
