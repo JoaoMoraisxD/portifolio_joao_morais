@@ -1,0 +1,19 @@
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: .9rem;
+}
+
+.ferramentas {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 0px;
+}
+
+.ferramentas img {
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+}
+

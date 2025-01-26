@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(100, 100, 100, 0.5) transparent;
 }
 
 @font-face {
@@ -12,8 +14,9 @@ body{
     background: linear-gradient(45deg, #feda75, #fa7e1e, #871749, black, black, black, #962fbf, #c00c5d, #fa7e1e, #ccaa4d);
     background-size: 200% 200%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     animation: gradientAnimation 10s ease infinite;
-    height: 100vh;
+    height: 97vh;
     color: white;
 }
 
@@ -22,6 +25,8 @@ body{
     margin: 1rem;
     border: 1px solid #fff;
     border-radius: 1rem;
+    height: 95%;
+    overflow-y: auto;
 }
 
 @media only screen and (min-width: 684px) {
